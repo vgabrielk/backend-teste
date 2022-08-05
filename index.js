@@ -8,7 +8,7 @@ app.use((
     })
 ))
 
-app.listen(3001)
+app.listen(process.env.PORT || 3001)
 
 app.get('/childrens', (req, res) => {
     res.json([
