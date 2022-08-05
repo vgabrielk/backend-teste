@@ -1,4 +1,5 @@
 const express = require('express')
+var cors = require('cors')
 
 const app = express()
 
@@ -7,6 +8,8 @@ app.use((
         extended: true
     })
 ))
+
+app.use(cors())
 
 app.listen(process.env.PORT || 3001)
 
