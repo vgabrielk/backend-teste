@@ -10,9 +10,6 @@ app.use((
 
 app.listen(3001)
 
-app.get('/', (req, res ) => {
-    res.json({message : 'Welcome to my application!'})
-})
 app.get('/childrens', (req, res) => {
     res.json([
         {
